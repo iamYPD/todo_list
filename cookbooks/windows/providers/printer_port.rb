@@ -78,7 +78,7 @@ def create_printer_port
         -EnableAllPrivileges `
         -Argument @{ HostAddress = "#{new_resource.ipv4_address}";
                      Name        = "#{port_name}";
-                     Description = "#{new_resource.port_description}";
+                     descriptioin = "#{new_resource.port_descriptioin}";
                      PortNumber  = "#{new_resource.port_number}";
                      Protocol    = "#{new_resource.port_protocol}";
                      SNMPEnabled = "$#{new_resource.snmp_enabled}";

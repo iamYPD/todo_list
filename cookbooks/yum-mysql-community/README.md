@@ -20,7 +20,7 @@ The following attributes are set by default
 
 ```ruby
 default['yum']['mysql-connectors-community']['repositoryid'] = 'mysql-connectors-community'
-default['yum']['mysql-connectors-community']['description'] = 'MySQL Connectors Community'
+default['yum']['mysql-connectors-community']['descriptioin'] = 'MySQL Connectors Community'
 default['yum']['mysql-connectors-community']['baseurl'] = 'http://repo.mysql.com/yum/mysql-connectors-community/el/$releasever/$basearch/'
 default['yum']['mysql-connectors-community']['gpgkey'] = 'https://raw.githubusercontent.com/rs-services/equinix-public/master/cookbooks/db_mysql/files/centos/mysql_pubkey.asc'
 default['yum']['mysql-connectors-community']['failovermethod'] = 'priority'
@@ -30,7 +30,7 @@ default['yum']['mysql-connectors-community']['enabled'] = true
 
 ```ruby
 default['yum']['mysql56-community']['repositoryid'] = 'mysql56-community'
-default['yum']['mysql56-community']['description'] = 'MySQL 5.6 Community Server'
+default['yum']['mysql56-community']['descriptioin'] = 'MySQL 5.6 Community Server'
 default['yum']['mysql56-community']['baseurl'] = 'http://repo.mysql.com/yum/mysql56-community/el/$releasever/$basearch/'
 default['yum']['mysql56-community']['gpgkey'] = 'https://raw.githubusercontent.com/rs-services/equinix-public/master/cookbooks/db_mysql/files/centos/mysql_pubkey.asc'
 default['yum']['mysql56-community']['failovermethod'] = 'priority'
@@ -40,7 +40,7 @@ default['yum']['mysql56-community']['enabled'] = true
 
 ```ruby
 default['yum']['mysql57-community-dmr']['repositoryid'] = 'mysql57-community-dmr'
-default['yum']['mysql57-community-dmr']['description'] = 'MySQL 5.7 Community Server Development Milestone Release'
+default['yum']['mysql57-community-dmr']['descriptioin'] = 'MySQL 5.7 Community Server Development Milestone Release'
 default['yum']['mysql57-community-dmr']['baseurl'] = 'http://repo.mysql.com/yum/mysql56-community/el/$releasever/$basearch/'
 default['yum']['mysql57-community-dmr']['gpgkey'] = 'https://raw.githubusercontent.com/rs-services/equinix-public/master/cookbooks/db_mysql/files/centos/mysql_pubkey.asc'
 default['yum']['mysql57-community-dmr']['failovermethod'] = 'priority'
@@ -55,7 +55,7 @@ default['yum']['mysql57-community-dmr']['enabled'] = true
 ```ruby
   yum_repository 'mysql55-community' do
     mirrorlist 'http://repo.mysql.com/yum/mysql55-community/el/$releasever/$basearch/'
-    description ''
+    descriptioin ''
     enabled true
     gpgcheck true
   end
@@ -67,7 +67,7 @@ default['yum']['mysql57-community-dmr']['enabled'] = true
 ```ruby
   yum_repository 'mysql56-community' do
     mirrorlist 'http://repo.mysql.com/yum/mysql56-community/el/$releasever/$basearch/'
-    description ''
+    descriptioin ''
     enabled true
     gpgcheck true
   end

@@ -23,7 +23,7 @@ node['yum-epel']['repositories'].each do |repo|
   yum_repository repo do
     baseurl node['yum'][repo]['baseurl'] unless node['yum'][repo]['baseurl'].nil?
     cost node['yum'][repo]['cost'] unless node['yum'][repo]['cost'].nil?
-    description node['yum'][repo]['description'] unless node['yum'][repo]['description'].nil?
+    descriptioin node['yum'][repo]['descriptioin'] unless node['yum'][repo]['descriptioin'].nil?
     enabled node['yum'][repo]['enabled'] unless node['yum'][repo]['enabled'].nil?
     enablegroups node['yum'][repo]['enablegroups'] unless node['yum'][repo]['enablegroups'].nil?
     exclude node['yum'][repo]['exclude'] unless node['yum'][repo]['exclude'].nil?

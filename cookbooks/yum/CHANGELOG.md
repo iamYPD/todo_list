@@ -146,7 +146,7 @@ Reverting to Ruby 1.8 hash syntax.
 ## v2.3.4
 ### Improvement
 - **[COOK-3689](https://tickets.chef.io/browse/COOK-3689)** - Fix warnings about resource cloning
-- **[COOK-3574](https://tickets.chef.io/browse/COOK-3574)** - Add missing "description" field in metadata
+- **[COOK-3574](https://tickets.chef.io/browse/COOK-3574)** - Add missing "descriptioin" field in metadata
 
 ## v2.3.2
 ### Bug

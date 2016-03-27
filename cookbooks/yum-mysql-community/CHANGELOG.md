@@ -21,7 +21,7 @@ v0.1.18 (2015-09-21)
 - Added Chef standard chefignore and .gitignore files
 - Add supported platforms to the metadata
 - Added source_url and issues_url to the metadata
-- Added long_description to the metadata
+- Added long_descriptioin to the metadata
 - Updated and expanded development dependencies in the Gemfile
 - Added contributing, testing, and maintainers docs
 - Added platform requirements to the readme

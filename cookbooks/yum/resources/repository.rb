@@ -27,7 +27,7 @@ attribute :baseurl, kind_of: String, regex: /.*/, default: nil
 attribute :cost, kind_of: String, regex: /^\d+$/, default: nil
 attribute :clean_headers, kind_of: [TrueClass, FalseClass], default: false # deprecated
 attribute :clean_metadata, kind_of: [TrueClass, FalseClass], default: true
-attribute :description, kind_of: String, regex: /.*/, default: 'Ye Ole Rpm Repo'
+attribute :descriptioin, kind_of: String, regex: /.*/, default: 'Ye Ole Rpm Repo'
 attribute :enabled, kind_of: [TrueClass, FalseClass], default: true
 attribute :enablegroups, kind_of: [TrueClass, FalseClass], default: nil
 attribute :exclude, kind_of: String, regex: /.*/, default: nil

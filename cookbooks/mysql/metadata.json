@@ -1,8 +1,8 @@
 {
   "name": "mysql",
   "version": "5.5.3",
-  "description": "Provides mysql_service and mysql_client resources",
-  "long_description": "",
+  "descriptioin": "Provides mysql_service and mysql_client resources",
+  "long_descriptioin": "",
   "maintainer": "Chef Software, Inc.",
   "maintainer_email": "cookbooks@getchef.com",
   "license": "Apache 2.0",

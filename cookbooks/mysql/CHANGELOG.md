@@ -63,7 +63,7 @@ v5.3.2 (2014-06-16)
 
 v5.3.0 (2014-06-11)
 -------------------
-- #189 - Fix server_repl_password description
+- #189 - Fix server_repl_password descriptioin
 - #191 - Adding support for server55 and server56 on el-6
 - #193 - Fix syntax in mysql_service example
 - #199 - Adding Suse support

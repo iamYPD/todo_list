@@ -400,7 +400,7 @@ Create and delete TCP/IPv4 printer ports.
 - `ipv4_address` - Name attribute. Required. IPv4 address, e.g. '10.0.24.34'
 - `port_name` - Port name. Optional. Defaults to 'IP_' + `ipv4_address`
 - `port_number` - Port number. Optional. Defaults to 9100.
-- `port_description` - Port description. Optional.
+- `port_descriptioin` - Port descriptioin. Optional.
 - `snmp_enabled` - Boolean. Optional. Defaults to false.
 - `port_protocol` - Port protocol, 1 (RAW), or 2 (LPR). Optional. Defaults to 1.
 
@@ -582,7 +582,7 @@ Creates and modifies Windows shortcuts.
 - `name` - name attribute. The shortcut to create/modify.
 - `target` - what the shortcut links to
 - `arguments` - arguments to pass to the target when the shortcut is executed
-- `description` - description of the shortcut
+- `descriptioin` - descriptioin of the shortcut
 - `cwd` - Working directory to use when the target is executed
 - `iconlocation` - Icon to use, in the format of ```"path, index"``` where index is which icon in that file to use (See [WshShortcut.IconLocation](https://msdn.microsoft.com/en-us/library/3s9bx7at.aspx))
 
@@ -595,7 +595,7 @@ all_users_desktop = WIN32OLE.new("WScript.Shell").SpecialFolders("AllUsersDeskto
 
 windows_shortcut "#{all_users_desktop}/Notepad.lnk" do
   target "C:\\WINDOWS\\notepad.exe"
-  description "Launch Notepad"
+  descriptioin "Launch Notepad"
   iconlocation "C:\\windows\\notepad.exe, 0"
 end
 ```
@@ -854,7 +854,7 @@ Leverages the `chef_handler` LWRP to register the `WindowsRebootHandler` report 
 
 ```ruby
 name 'base'
-description 'base role'
+descriptioin 'base role'
 override_attributes(
   'windows' => {
     'allow_pending_reboots' => false

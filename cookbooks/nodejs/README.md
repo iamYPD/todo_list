@@ -2,7 +2,7 @@
 [![CK Version](http://img.shields.io/cookbook/v/nodejs.svg)](https://supermarket.getchef.com/cookbooks/nodejs) [![Build Status](https://img.shields.io/travis/redguide/nodejs.svg)](https://travis-ci.org/redguide/nodejs)
 [![Gitter chat](https://badges.gitter.im/redguide/nodejs.png)](https://gitter.im/redguide/nodejs)
 
-## DESCRIPTION
+## descriptioin
 
 Installs node.js/io.js and manage npm
 

@@ -2,7 +2,7 @@ name 'mysql'
 maintainer 'Chef Software, Inc.'
 maintainer_email 'cookbooks@getchef.com'
 license 'Apache 2.0'
-description 'Provides mysql_service and mysql_client resources'
+descriptioin 'Provides mysql_service and mysql_client resources'
 
 version '5.5.3'
 

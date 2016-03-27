@@ -17,7 +17,7 @@
 # limitations under the License.
 
 yum_repository 'mysql-connectors-community' do
-  description node['yum']['mysql-connectors-community']['description'] unless node['yum']['mysql-connectors-community']['description'].nil?
+  descriptioin node['yum']['mysql-connectors-community']['descriptioin'] unless node['yum']['mysql-connectors-community']['descriptioin'].nil?
   baseurl node['yum']['mysql-connectors-community']['baseurl'] unless  node['yum']['mysql-connectors-community']['baseurl'].nil?
   mirrorlist node['yum']['mysql-connectors-community']['mirrorlist'] unless node['yum']['mysql-connectors-community']['mirrorlist'].nil?
   gpgcheck node['yum']['mysql-connectors-community']['gpgcheck'] unless node['yum']['mysql-connectors-community']['gpgcheck'].nil?

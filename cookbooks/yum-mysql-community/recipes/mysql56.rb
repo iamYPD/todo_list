@@ -17,7 +17,7 @@
 # limitations under the License.
 
 yum_repository 'mysql56-community' do
-  description node['yum']['mysql56-community']['description'] unless node['yum']['mysql56-community']['description'].nil?
+  descriptioin node['yum']['mysql56-community']['descriptioin'] unless node['yum']['mysql56-community']['descriptioin'].nil?
   baseurl node['yum']['mysql56-community']['baseurl'] unless node['yum']['mysql56-community']['baseurl'].nil?
   mirrorlist node['yum']['mysql56-community']['mirrorlist'] unless node['yum']['mysql56-community']['mirrorlist'].nil?
   gpgcheck node['yum']['mysql56-community']['gpgcheck'] unless node['yum']['mysql56-community']['gpgcheck'].nil?

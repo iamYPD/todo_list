@@ -26,7 +26,7 @@ This resource manages a yum repository configuration file at /etc/yum.repos.d/`r
 ```ruby
 # add the Zenoss repository
 yum_repository 'zenoss' do
-  description "Zenoss Stable repo"
+  descriptioin "Zenoss Stable repo"
   baseurl "http://dev.zenoss.com/yum/stable/"
   gpgkey 'http://dev.zenoss.com/yum/RPM-GPG-KEY-zenoss'
   action :create
@@ -34,7 +34,7 @@ end
 
 # add the EPEL repo
 yum_repository 'epel' do
-  description 'Extra Packages for Enterprise Linux'
+  descriptioin 'Extra Packages for Enterprise Linux'
   mirrorlist 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch'
   gpgkey 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
   action :create
@@ -57,7 +57,7 @@ end
 - `baseurl` -  Must be a URL to the directory where the yum repository's 'repodata' directory lives. Can be an http://, ftp:// or file:// URL. You can specify multiple URLs in one baseurl statement.
 - `cost` - relative cost of accessing this repository. Useful for weighing one repo's packages as greater/less than any other. defaults to 1000
 - `clean_metadata` - Run "yum clean metadata <reponame>" during repository creation. defaults to true.
-- `description` - Maps to the 'name' parameter in a repository .conf. Descriptive name for the repository channel. This directive must be specified.
+- `descriptioin` - Maps to the 'name' parameter in a repository .conf. Descriptive name for the repository channel. This directive must be specified.
 - `enabled` - Either `true` or `false`. This tells yum whether or not use this repository.
 - `enablegroups` -  Either `true` or `false`. Determines whether yum will allow the use of package groups for this repository. Default is `true` (package groups are allowed).
 - `exclude` - List of packages to exclude from updates or installs. This should be a space separated list in a single string. Shell globs using wildcards (eg. * and ?) are allowed.
