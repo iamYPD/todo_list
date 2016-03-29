@@ -4,14 +4,14 @@ describe "Creating todo lists" do
 	
 	def create_todo_list(options={})
 		options[:title] ||= "My todo list"
-		options[:descriptioin] ||= "This is my todo list"
+		options[:description] ||= "This is my todo list"
 
 		visit "/todo_lists"
 		click_link "New Todo list"
 		expect(page).to have_content("New Todo List")
 
 		fill_in "Title", with: options[:title]
-		fill_in "Descriptioin", with: options[:descriptioin]
+		fill_in "Description", with: options[:description]
 		click_button "Create Todo list"
 
 	end
@@ -53,7 +53,7 @@ describe "Creating todo lists" do
 	it "displays an error when the todo list has no description" do
 		expect(TodoList.count).to eq(0)
 
-		create_todo_list descriptioin: ""
+		create_todo_list description: ""
 
 		expect(page).to have_content("error")
 		expect(TodoList.count).to eq(0)
@@ -66,7 +66,7 @@ describe "Creating todo lists" do
 	it "displays an error when the todo list has a description less than 10 characters" do
 		expect(TodoList.count).to eq(0)
 
-		create_todo_list title:"My To Do List", descriptioin: "Short"
+		create_todo_list title:"My To Do List", description: "Short"
 
 		expect(page).to have_content("error")
 		expect(TodoList.count).to eq(0)
