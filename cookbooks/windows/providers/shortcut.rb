@@ -28,7 +28,7 @@ def load_current_resource
   @current_resource.name(@new_resource.name)
   @current_resource.target(@link.TargetPath)
   @current_resource.arguments(@link.Arguments)
-  @current_resource.descriptioin(@link.descriptioin)
+  @current_resource.descriptiontion(@link.descriptiontion)
   @current_resource.cwd(@link.WorkingDirectory)
   @current_resource.iconlocation(@link.IconLocation)
 end
@@ -39,7 +39,7 @@ end
 # <true>:: If a change is required
 # <false>:: If the shorcuts are identical
 def compare_shortcut
-  [:target, :arguments, :descriptioin, :cwd, :iconlocation].any? do |attr|
+  [:target, :arguments, :descriptiontion, :cwd, :iconlocation].any? do |attr|
     !@new_resource.send(attr).nil? && @current_resource.send(attr) != @new_resource.send(attr)
   end
 end
@@ -48,7 +48,7 @@ action :create do
   if compare_shortcut
     @link.TargetPath = @new_resource.target unless @new_resource.target.nil?
     @link.Arguments = @new_resource.arguments unless @new_resource.arguments.nil?
-    @link.descriptioin = @new_resource.descriptioin unless @new_resource.descriptioin.nil?
+    @link.descriptiontion = @new_resource.descriptiontion unless @new_resource.descriptiontion.nil?
     @link.WorkingDirectory = @new_resource.cwd unless @new_resource.cwd.nil?
     @link.IconLocation = @new_resource.iconlocation unless @new_resource.iconlocation.nil?
     # ignoring: WindowStyle, Hotkey

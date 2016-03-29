@@ -1,6 +1,6 @@
 default['yum']['mysql55-community']['repositoryid'] = 'mysql55-community'
 default['yum']['mysql55-community']['gpgkey'] = 'https://raw.githubusercontent.com/chef-cookbooks/yum-mysql-community/master/files/default/mysql_pubkey.asc'
-default['yum']['mysql55-community']['descriptioin'] = 'MySQL 5.5 Community Server'
+default['yum']['mysql55-community']['descriptiontion'] = 'MySQL 5.5 Community Server'
 default['yum']['mysql55-community']['failovermethod'] = 'priority'
 default['yum']['mysql55-community']['gpgcheck'] = true
 default['yum']['mysql55-community']['enabled'] = true

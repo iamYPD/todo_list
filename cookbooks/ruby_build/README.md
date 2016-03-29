@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/fnichol/chef-ruby_build.png?branch=master)](http://travis-ci.org/fnichol/chef-ruby_build)
 
-## <a name="descriptioin"></a> descriptioin
+## <a name="descriptiontion"></a> descriptiontion
 
 Manages the [ruby-build][rb_site] framework and its installed Rubies.
 A lightweight resources and providers ([LWRP][lwrp]) is also defined.
@@ -171,7 +171,7 @@ The default is `"none"`.
   <thead>
     <tr>
       <th>Action</th>
-      <th>descriptioin</th>
+      <th>descriptiontion</th>
       <th>Default</th>
     </tr>
   </thead>
@@ -203,7 +203,7 @@ The default is `"none"`.
   <thead>
     <tr>
       <th>Attribute</th>
-      <th>descriptioin</th>
+      <th>descriptiontion</th>
       <th>Default Value</th>
     </tr>
   </thead>

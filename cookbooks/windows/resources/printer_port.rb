@@ -31,7 +31,7 @@ attribute :ipv4_address, name_attribute: true, kind_of: String,
 
 attribute :port_name, kind_of: String
 attribute :port_number, kind_of: Fixnum, default: 9100
-attribute :port_descriptioin, kind_of: String
+attribute :port_descriptiontion, kind_of: String
 attribute :snmp_enabled, kind_of: [TrueClass, FalseClass],
                          default: false
 

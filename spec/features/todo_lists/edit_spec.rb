@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 describe "Editing todo lists" do 
-	let!(:todo_list) { TodoList.create(title: "Groceries", descriptioin: "Grocery list.") }
+	let!(:todo_list) { TodoList.create(title: "Groceries", description: "Grocery list.") }
 
 	def update_todo_list(options={})
 		options[:title] ||= "My todo list"
-		options[:descriptioin] ||= "This is my todo list"
+		options[:description] ||= "This is my todo list"
 
 		todo_list = options[:todo_list]
 
@@ -15,7 +15,7 @@ describe "Editing todo lists" do
 		end
 
 		fill_in "Title", with: options[:title]
-		fill_in "Descriptioin", with: options[:descriptioin]
+		fill_in "Description", with: options[:description]
 		click_button "Update Todo list"
 	end
 
@@ -23,13 +23,13 @@ describe "Editing todo lists" do
 
 		update_todo_list todo_list: todo_list, 
 						 title: "New title", 
-						 descriptioin: "New description"
+						 description: "New description"
 
 		todo_list.reload
 
 		expect(page).to have_content("Todo list was successfully updated")
 		expect(todo_list.title).to eq("New title")
-		expect(todo_list.descriptioin).to eq("New description")
+		expect(todo_list.description).to eq("New description")
 	end
 end
 

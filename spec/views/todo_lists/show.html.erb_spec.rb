@@ -4,7 +4,7 @@ describe "todo_lists/show" do
   before(:each) do
     @todo_list = assign(:todo_list, stub_model(TodoList,
       :title => "Title",
-      :descriptioin => "MyText"
+      :descriptiontion => "MyText"
     ))
   end
 

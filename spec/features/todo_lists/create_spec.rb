@@ -13,7 +13,7 @@ describe "Creating todo lists" do
 		fill_in "Title", with: options[:title]
 		fill_in "Description", with: options[:description]
 		click_button "Create Todo list"
-
+ 
 	end
 
 

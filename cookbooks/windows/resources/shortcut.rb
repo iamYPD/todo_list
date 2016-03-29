@@ -25,7 +25,7 @@ default_action :create
 attribute :name, kind_of: String
 attribute :target, kind_of: String
 attribute :arguments, kind_of: String
-attribute :descriptioin, kind_of: String
+attribute :descriptiontion, kind_of: String
 attribute :cwd, kind_of: String
 attribute :iconlocation, kind_of: String
 

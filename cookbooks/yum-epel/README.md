@@ -23,7 +23,7 @@ default['yum-epel']['repositories'] = %w{epel epel-debuginfo epel-source epel-te
 
 ```ruby
 default['yum']['epel']['repositoryid'] = 'epel'
-default['yum']['epel']['descriptioin'] = 'Extra Packages for Enterprise Linux 6 - $basearch'
+default['yum']['epel']['descriptiontion'] = 'Extra Packages for Enterprise Linux 6 - $basearch'
 default['yum']['epel']['mirrorlist'] = 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-5&arch=$basearch'
 default['yum']['epel']['gpgkey'] = 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
 default['yum']['epel']['failovermethod'] = 'priority'
@@ -34,7 +34,7 @@ default['yum']['epel']['managed'] = true
 
 ```ruby
 default['yum']['epel-debuginfo']['repositoryid'] = 'epel-debuginfo'
-default['yum']['epel-debuginfo']['descriptioin'] = 'Extra Packages for Enterprise Linux 6 - $basearch - Debug'
+default['yum']['epel-debuginfo']['descriptiontion'] = 'Extra Packages for Enterprise Linux 6 - $basearch - Debug'
 default['yum']['epel-debuginfo']['mirrorlist'] = 'https://mirrors.fedoraproject.org/metalink?repo=epel-debug-6&arch=$basearch'
 default['yum']['epel-debuginfo']['gpgkey'] = 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
 default['yum']['epel-debuginfo']['failovermethod'] = 'priority'
@@ -45,7 +45,7 @@ default['yum']['epel-debuginfo']['managed'] = false
 
 ```ruby
 default['yum']['epel-source']['repositoryid'] = 'epel-source'
-default['yum']['epel-source']['descriptioin'] = 'Extra Packages for Enterprise Linux 6 - $basearch - Source'
+default['yum']['epel-source']['descriptiontion'] = 'Extra Packages for Enterprise Linux 6 - $basearch - Source'
 default['yum']['epel-source']['mirrorlist'] = 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-source-6&arch=$basearch'
 default['yum']['epel-source']['gpgkey'] = 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
 default['yum']['epel-source']['failovermethod'] = 'priority'
@@ -56,7 +56,7 @@ default['yum']['epel-source']['managed'] = false
 
 ```ruby
 default['yum']['epel-testing']['repositoryid'] = 'epel-testing'
-default['yum']['epel-testing']['descriptioin'] = 'Extra Packages for Enterprise Linux 6 - Testing - $basearch'
+default['yum']['epel-testing']['descriptiontion'] = 'Extra Packages for Enterprise Linux 6 - Testing - $basearch'
 default['yum']['epel-testing']['mirrorlist'] = 'https://mirrors.fedoraproject.org/metalink?repo=testing-epel6&arch=$basearch'
 default['yum']['epel-testing']['gpgkey'] = 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6r'
 default['yum']['epel-testing']['failovermethod'] = 'priority'
@@ -67,7 +67,7 @@ default['yum']['epel-testing']['managed'] = false
 
 ```ruby
 default['yum']['epel-testing-debuginfo']['repositoryid'] = 'epel-testing-debuginfo'
-default['yum']['epel-testing-debuginfo']['descriptioin'] = 'Extra Packages for Enterprise Linux 6 - Testing - $basearch Debug'
+default['yum']['epel-testing-debuginfo']['descriptiontion'] = 'Extra Packages for Enterprise Linux 6 - Testing - $basearch Debug'
 default['yum']['epel-testing-debuginfo']['mirrorlist'] = 'https://mirrors.fedoraproject.org/metalink?repo=testing-debug-epel6&arch=$basearch'
 default['yum']['epel-testing-debuginfo']['gpgkey'] = 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
 default['yum']['epel-testing-debuginfo']['failovermethod'] = 'priority'
@@ -78,7 +78,7 @@ default['yum']['epel-testing-debuginfo']['managed'] = false
 
 ```ruby
 default['yum']['epel-testing-source']['repositoryid'] = 'epel-testing-source'
-default['yum']['epel-testing-source']['descriptioin'] = 'Extra Packages for Enterprise Linux 6 - Testing - $basearch Source'
+default['yum']['epel-testing-source']['descriptiontion'] = 'Extra Packages for Enterprise Linux 6 - Testing - $basearch Source'
 default['yum']['epel-testing-source']['mirrorlist'] = 'https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel6&arch=$basearch'
 default['yum']['epel-testing-source']['gpgkey'] = 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
 default['yum']['epel-testing-source']['failovermethod'] = 'priority'
@@ -95,7 +95,7 @@ default['yum']['epel-testing-source']['managed'] = false
 ```ruby
   yum_repository 'epel' do
     mirrorlist 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-5&arch=$basearch'
-    descriptioin 'Extra Packages for Enterprise Linux 5 - $basearch'
+    descriptiontion 'Extra Packages for Enterprise Linux 5 - $basearch'
     enabled true
     gpgcheck true
     gpgkey 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL'
